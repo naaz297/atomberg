@@ -21,12 +21,19 @@ export default function Index() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight">
-              Control Your <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">Smart Fans</span>
+              Control Your{" "}
+              <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
+                Smart Fans
+              </span>
             </h1>
             <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Manage all your Atomberg smart fans from one beautiful interface. Cool down smarter, not harder.
+              Manage all your Atomberg smart fans from one beautiful interface.
+              Cool down smarter, not harder.
             </p>
-            <form onSubmit={handleGetStarted} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-8">
+            <form
+              onSubmit={handleGetStarted}
+              className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-8"
+            >
               <input
                 type="email"
                 placeholder="Enter your API key"
@@ -69,16 +76,21 @@ export default function Index() {
       {/* Features Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">Why Choose Atomberg?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
+            Why Choose Atomberg?
+          </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Feature 1 */}
             <div className="p-8 rounded-xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-yellow-400/50 transition-all">
               <div className="w-12 h-12 rounded-lg bg-yellow-400/10 flex items-center justify-center mb-4">
                 <Wind className="w-6 h-6 text-yellow-400" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Smart Control</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">
+                Smart Control
+              </h3>
               <p className="text-slate-300">
-                Control multiple fans instantly with intuitive controls. Adjust speed, set timers, and create schedules.
+                Control multiple fans instantly with intuitive controls. Adjust
+                speed, set timers, and create schedules.
               </p>
             </div>
 
@@ -87,9 +99,12 @@ export default function Index() {
               <div className="w-12 h-12 rounded-lg bg-yellow-400/10 flex items-center justify-center mb-4">
                 <Zap className="w-6 h-6 text-yellow-400" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Energy Efficient</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">
+                Energy Efficient
+              </h3>
               <p className="text-slate-300">
-                Monitor energy consumption and optimize usage. Reduce electricity bills while staying cool all day.
+                Monitor energy consumption and optimize usage. Reduce
+                electricity bills while staying cool all day.
               </p>
             </div>
 
@@ -98,9 +113,12 @@ export default function Index() {
               <div className="w-12 h-12 rounded-lg bg-yellow-400/10 flex items-center justify-center mb-4">
                 <Gauge className="w-6 h-6 text-yellow-400" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Real-time Analytics</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">
+                Real-time Analytics
+              </h3>
               <p className="text-slate-300">
-                Track fan performance and get insights. Temperature readings, speed metrics, and usage statistics.
+                Track fan performance and get insights. Temperature readings,
+                speed metrics, and usage statistics.
               </p>
             </div>
           </div>
@@ -110,7 +128,9 @@ export default function Index() {
       {/* How It Works */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">Three Simple Steps</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
+            Three Simple Steps
+          </h2>
           <div className="space-y-8">
             {/* Step 1 */}
             <div className="flex gap-6 items-start">
@@ -118,9 +138,12 @@ export default function Index() {
                 1
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Get Your API Key</h3>
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  Get Your API Key
+                </h3>
                 <p className="text-slate-300">
-                  Head to the Atomberg Developer portal and register your smart fans. Grab your API key in seconds.
+                  Head to the Atomberg Developer portal and register your smart
+                  fans. Grab your API key in seconds.
                 </p>
               </div>
             </div>
@@ -131,9 +154,12 @@ export default function Index() {
                 2
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Connect Your Fans</h3>
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  Connect Your Fans
+                </h3>
                 <p className="text-slate-300">
-                  Paste your API key and instantly see all your registered smart fans appear on the dashboard.
+                  Paste your API key and instantly see all your registered smart
+                  fans appear on the dashboard.
                 </p>
               </div>
             </div>
@@ -144,9 +170,12 @@ export default function Index() {
                 3
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Start Controlling</h3>
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  Start Controlling
+                </h3>
                 <p className="text-slate-300">
-                  Adjust speeds, set timers, and manage all your fans from one central place. It's that easy.
+                  Adjust speeds, set timers, and manage all your fans from one
+                  central place. It's that easy.
                 </p>
               </div>
             </div>
@@ -157,9 +186,12 @@ export default function Index() {
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-yellow-400/5 to-yellow-500/5 border-t border-b border-slate-700">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to Take Control?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            Ready to Take Control?
+          </h2>
           <p className="text-xl text-slate-300 mb-8">
-            Join thousands of Atomberg users who've optimized their cooling and energy usage.
+            Join thousands of Atomberg users who've optimized their cooling and
+            energy usage.
           </p>
           <Link
             to="/dashboard"
@@ -184,7 +216,9 @@ export default function Index() {
               Atomberg Developer APIs
             </a>
           </p>
-          <p className="text-sm">© 2025 Atomberg Control. All rights reserved.</p>
+          <p className="text-sm">
+            © 2025 Atomberg Control. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>

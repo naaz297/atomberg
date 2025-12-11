@@ -19,7 +19,13 @@ export default function Dashboard() {
 
   // Mock fans for demo
   const mockFans: Fan[] = [
-    { id: "1", name: "Living Room Fan", isOn: true, speed: 65, temperature: 28 },
+    {
+      id: "1",
+      name: "Living Room Fan",
+      isOn: true,
+      speed: 65,
+      temperature: 28,
+    },
     { id: "2", name: "Bedroom Fan", isOn: false, speed: 0, temperature: 24 },
     { id: "3", name: "Office Fan", isOn: true, speed: 45, temperature: 26 },
   ];
@@ -45,14 +51,18 @@ export default function Dashboard() {
   const toggleFan = (id: string) => {
     setFans(
       fans.map((fan) =>
-        fan.id === id ? { ...fan, isOn: !fan.isOn, speed: !fan.isOn ? 50 : 0 } : fan
-      )
+        fan.id === id
+          ? { ...fan, isOn: !fan.isOn, speed: !fan.isOn ? 50 : 0 }
+          : fan,
+      ),
     );
   };
 
   const updateFanSpeed = (id: string, speed: number) => {
     setFans(
-      fans.map((fan) => (fan.id === id ? { ...fan, speed, isOn: speed > 0 } : fan))
+      fans.map((fan) =>
+        fan.id === id ? { ...fan, speed, isOn: speed > 0 } : fan,
+      ),
     );
   };
 
@@ -139,7 +149,11 @@ export default function Dashboard() {
             <div>
               <h1 className="text-4xl font-bold text-white mb-2">My Fans</h1>
               <p className="text-slate-400">
-                You have <span className="text-yellow-400 font-semibold">{fans.length}</span> smart fans connected
+                You have{" "}
+                <span className="text-yellow-400 font-semibold">
+                  {fans.length}
+                </span>{" "}
+                smart fans connected
               </p>
             </div>
             <button
@@ -233,7 +247,9 @@ export default function Dashboard() {
           ) : (
             <div className="text-center py-20 border-2 border-dashed border-slate-700 rounded-xl">
               <Wind className="w-16 h-16 text-slate-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">No Fans Connected</h3>
+              <h3 className="text-xl font-semibold text-white mb-2">
+                No Fans Connected
+              </h3>
               <p className="text-slate-400">
                 Add your first fan from the Atomberg Developer portal
               </p>
