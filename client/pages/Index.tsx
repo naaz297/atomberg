@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Zap, Smartphone, Gauge, ChevronRight } from "lucide-react";
+import { Zap, Smartphone, Gauge, ChevronRight, Wind } from "lucide-react";
 import Header from "@/components/Header";
 
 export default function Index() {
